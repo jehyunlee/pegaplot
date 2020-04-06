@@ -42,7 +42,10 @@
         "math": {
             "verticalalignment": "bottom",
             "horizontalalignment": "center"
+        },
+        "text": {
+            "color":"white",
+            "horizontalalignment": "center"
         }
-    
     }
 }
