@@ -117,6 +117,7 @@ font_label = fonts['label']     # xlabel and ylabel
 font_title = fonts['title']     # title
 font_negsup = fonts['negsub']   # negative(-) on superscript 
 font_math = fonts['math']       # math
+font_text = fonts['text']       # text
 
 # fontproperties:suptitle
 font_suptitle = mpl.font_manager.FontProperties()
@@ -141,8 +142,12 @@ def subplots(xlabel=None,
         figsize = params['figsize']
     
     if ncols * nrows > 1:
-        figsize = [params['figsize'][0]*ncols, 
-                   params['figsize'][1]*nrows]
+        if figsize == None:
+            figsize = [params['figsize'][0]*ncols, 
+                       params['figsize'][1]*nrows]
+        else:
+            figsize = [figsize[0]*ncols,
+                       figsize[1]*nrows]
         
         fig, ax = plt.subplots(ncols=ncols, nrows=nrows, figsize=figsize,
                               sharex=sharex, sharey=sharey)
