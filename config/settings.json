@@ -1,12 +1,14 @@
 {
     "params": {
-        "color" : "green",
+        "color" : "skyblue",
+        "cmap"  : "magma",
+        "alpha" : 0.5,
         "style" : "seaborn-whitegrid",
         "palette" : "bright",
         "context" : "talk",
-        "mathfont" : "cm",
-        "krfont" : "NanumGothic",
-        "figsize" : [4,4],
+        "fontmath" : "cm",
+        "fontkr" : "NanumGothic",
+        "figsize" : [5, 5],
         "showdpi" : 72,
         "filedpi" : 200
     },
@@ -14,24 +16,27 @@
     "fonts":{
         "suptitle":{
             "family": "serif",
-            "size": 22,
-            "weight": "bold"
+            "fontsize": 22,
+            "fontweight": "bold",
+            "color": "gray",
+            "verticalalignment": "baseline",
+            "horizontalalignment": "center"
         },
         
         "title":{
             "family": "sans-serif",
-            "size": 20,
+            "fontsize": 20,
             "color": "cornflowerblue",
-            "weight": "bold",
+            "fontweight": "bold",
             "verticalalignment": "baseline",
             "horizontalalignment": "center"
         },
         
         "label": {
             "family": "sans-serif",
+            "fontsize": 18,
             "color": "gray",
-            "weight": "bold",
-            "horizontalalignment": "center"
+            "fontweight": "bold"
         },
         
         "negsub": {
@@ -44,7 +49,11 @@
             "horizontalalignment": "center"
         },
         "text": {
-            "color":"white",
+            "family": "sans-serif",
+            "fontsize": 18,
+            "color": "gray",
+            "fontweight": "bold",
+            "verticalalignment": "baseline",
             "horizontalalignment": "center"
         }
     }
